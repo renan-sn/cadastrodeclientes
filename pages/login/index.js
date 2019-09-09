@@ -1,4 +1,4 @@
-$(function () {
+$(function() {
 
     $('#repo-form').on('submit', function(event) {
         event.preventDefault();
@@ -18,10 +18,11 @@ $(function () {
             return;
         }
         
-        
-
-        //console.log(entradaDeEmail);
-        //console.log(entradaDeSenha);
+        cadastrarUsuario(entradaDeEmail, entradaDeSenha);
     });
     
+    const cadastrarUsuario = (email, senha) => {
+        console.log(email.value, senha.value);
+    }
+
 });

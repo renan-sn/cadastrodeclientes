@@ -47,16 +47,21 @@ $(function () {
         }
         
         /* Função de registros */
-        registrarUsuario(entradaDeEmail, entradaDeSenha1);
+        registrarUsuario(entradaDeEmail, entradaDeSenha1, entradaDeSenha2);
     });
 
     /* Registro de Usuário */
-    function registrarUsuario(entradaDeEmail, entradaDeSenha1) { 
+    function registrarUsuario(email, senha1, senha2) { 
         event.preventDefault();
         usuariosRegistrados.push({ 
-            email: entradaDeEmail.value, 
-            senha: entradaDeSenha1.value 
-        });       
+            email: email.value, 
+            senha: senha1.value 
+        });
+        
+        /* Limpa entradas */
+        email.value = '';
+        senha1.value = '';
+        senha2.value = '';
     }
     
 });
