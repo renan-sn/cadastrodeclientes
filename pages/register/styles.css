@@ -36,9 +36,10 @@ form#repo-form p {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #000;margin-bottom: 10px;
     font-size: 18pt;
+    margin-bottom: 30px;
 }
 
-#entrada-de-texto, #entrada-de-senha1, #entrada-de-senha2, #botao-login {
+#entrada-de-texto, #entrada-de-senha1, #entrada-de-senha2, #botao-registrar {
     width: 100%;
     padding: 5px;
 }
@@ -53,11 +54,11 @@ form#repo-form p {
     font-size: 13pt;
 }
 
-#botao-login {
+#botao-registrar {
     padding: 10px;
 }
 
-.botao-login {
+.botao-registrar {
     cursor: not-allowed;
 }
 
